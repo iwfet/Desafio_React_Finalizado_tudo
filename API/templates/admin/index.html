@@ -1,0 +1,39 @@
+{% extends "layouts.html" %}
+
+{% block content %}
+
+<div>
+    <form action="{{url_for('salario')}}" method="POST">           
+      <label style="padding-top: 30px;" for="">Salario Bruto</label>
+        <input step=".01" style="background-color: rgb(255, 255, 255);border:solid;border-color:gold;border-radius: 10px;font-size: 20px;margin-top: 30px;" class="w3-button w3-block w3-black" type="number" name="salario_bruto"  value="0" min="0" >
+    <label style="padding-top: 30px;" for="">Descontos</label>
+        <input step=".01"style="background-color: rgb(255, 255, 255);border:solid;border-color:gold;border-radius: 10px;font-size: 20px;margin-top: 30px;" class="w3-button w3-block w3-black" type="number" name="Descontos"  value="0" min="0" >
+    <label style="padding-top: 30px;" for="">Dependentes</label>
+        <input step=".01"style="background-color: rgb(255, 255, 255);border:solid;border-color:gold;border-radius: 10px;font-size: 20px;margin-top: 30px;" class="w3-button w3-block w3-black" type="number" name="Dependentes"  value="0" min="0" >
+
+        <button type="submit" class="w3-bar-item w3-button" style="width: 100%;font-size: 35px;vertical-align:bottom; margin-top: 20px;border:solid gold;border-radius:20px;background-color: rgb(255, 255, 255);"><b>Calcular</b></button>
+    </form>
+</div>
+{% if not valor %}
+<div>
+    
+</div>
+{% else %}
+
+    <div>
+        <p>{{ valor }}</p>
+    </div>
+    <div>
+        <p>{{valorirrf}}</p>
+    </div>
+    <div>
+        <p>{{valor_fina}}</p>
+    </div>
+
+{% endif %}
+
+
+
+
+
+{% endblock content %} 

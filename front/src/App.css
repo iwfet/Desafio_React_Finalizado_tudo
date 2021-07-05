@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+*{
+  font-family: 'Nunito';
+  color: white;
+}
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+html,body {
+  height: 100%;
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  background-color: black;
+}
+#root {
+  height: 100%;
+  width: 100%;
+  margin:0px;
+  padding:0px;
+  background-image: linear-gradient(to bottom right, black, rgb(0, 15, 63));
+}
+.title {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+  padding-top:1%;
+  margin:0%;
+}
+.instruçoes{
+  text-align: center;
+  margin:0%;
+  
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

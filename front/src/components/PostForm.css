@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap');
+*{
+  font-family: 'Nunito';
+  color: white;
+}
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.div1 {
+    display:flex;
+    justify-content: space-around;
+    border:solid 0px;
+    border-radius: 10px;
+    background-color: transparent;
+    padding:2%;
+    margin:0%;
+}
+.form {
+    display:flex;
+    width: 30%;
+    background-color: transparent;
+    align-items: center;
+    border:solid 0px;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2%;
+    margin: 0;
+}
+.form-item {
+    display:flex;
+    flex-direction: column;
+    background-color: transparent;
+    color: white;
+    border:none;
+    border-bottom:solid 1px white;
+    font-size: 125%;
+    width:90%;
+    margin:2%;
+    padding:2%;
+}
+::-webkit-input-placeholder {
+    font-size: 125%;
+    color: white;
+}
+
+.form-button {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: transparent;
+    color:white;
+    border:solid 1px white;
+    font-size: 150%;
+    width:95%;
+    margin:2%;
+    padding:5%;
+}
+.result {
+    display:flex;
+    width: fit-content;
+    background-color:transparent;
+    color: white;
+    font-size: 150%;
+    border:solid 0px;
+    border-radius: 10px;
+    padding:0%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list {
+    list-style-type: none;
+    padding:0px 50px;
+    margin:0;
+}
